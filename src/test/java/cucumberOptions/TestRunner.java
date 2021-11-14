@@ -4,9 +4,9 @@ import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-
+//features = "src/test/java/features",
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/features",plugin = "json:target/jsonReports/cucumber--report.json", glue = {"stepDefinations"})
+@CucumberOptions(plugin = "json:target/jsonReports/cucumber--report.json", glue = {"stepDefinations"}, features = "src/test/java/features/PaytmGetMovieAPITest.feature")
 public class TestRunner {
 
 	//,tags = {"@DeletePlace"}
